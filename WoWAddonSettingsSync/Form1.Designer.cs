@@ -34,6 +34,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.FolderPathButton = new System.Windows.Forms.Button();
+            this.RealmListView = new System.Windows.Forms.ListView();
+            this.RealmLabel = new System.Windows.Forms.Label();
+            this.CharacterListView = new System.Windows.Forms.ListView();
+            this.CharacterLabel = new System.Windows.Forms.Label();
+            this.SelectedCharacterLabel = new System.Windows.Forms.Label();
+            this.CharacterToCopyTextbox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.SelectedCharactersLabel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.CharactersToCopyToListView = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // WTFPathTextbox
@@ -87,11 +97,106 @@
             this.FolderPathButton.TabIndex = 3;
             this.FolderPathButton.UseVisualStyleBackColor = true;
             // 
+            // RealmListView
+            // 
+            this.RealmListView.Location = new System.Drawing.Point(15, 113);
+            this.RealmListView.Name = "RealmListView";
+            this.RealmListView.Size = new System.Drawing.Size(120, 337);
+            this.RealmListView.TabIndex = 4;
+            this.RealmListView.UseCompatibleStateImageBehavior = false;
+            // 
+            // RealmLabel
+            // 
+            this.RealmLabel.AutoSize = true;
+            this.RealmLabel.Location = new System.Drawing.Point(12, 100);
+            this.RealmLabel.Name = "RealmLabel";
+            this.RealmLabel.Size = new System.Drawing.Size(37, 13);
+            this.RealmLabel.TabIndex = 5;
+            this.RealmLabel.Text = "Realm";
+            // 
+            // CharacterListView
+            // 
+            this.CharacterListView.Location = new System.Drawing.Point(142, 113);
+            this.CharacterListView.Name = "CharacterListView";
+            this.CharacterListView.Size = new System.Drawing.Size(120, 337);
+            this.CharacterListView.TabIndex = 4;
+            this.CharacterListView.UseCompatibleStateImageBehavior = false;
+            // 
+            // CharacterLabel
+            // 
+            this.CharacterLabel.AutoSize = true;
+            this.CharacterLabel.Location = new System.Drawing.Point(139, 100);
+            this.CharacterLabel.Name = "CharacterLabel";
+            this.CharacterLabel.Size = new System.Drawing.Size(53, 13);
+            this.CharacterLabel.TabIndex = 5;
+            this.CharacterLabel.Text = "Character";
+            // 
+            // SelectedCharacterLabel
+            // 
+            this.SelectedCharacterLabel.AutoSize = true;
+            this.SelectedCharacterLabel.Location = new System.Drawing.Point(266, 100);
+            this.SelectedCharacterLabel.Name = "SelectedCharacterLabel";
+            this.SelectedCharacterLabel.Size = new System.Drawing.Size(114, 13);
+            this.SelectedCharacterLabel.TabIndex = 6;
+            this.SelectedCharacterLabel.Text = "Character to copy from";
+            // 
+            // CharacterToCopyTextbox
+            // 
+            this.CharacterToCopyTextbox.Location = new System.Drawing.Point(269, 113);
+            this.CharacterToCopyTextbox.Name = "CharacterToCopyTextbox";
+            this.CharacterToCopyTextbox.Size = new System.Drawing.Size(229, 20);
+            this.CharacterToCopyTextbox.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(198, 87);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(306, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Select the character you want to copy from in the \'character\' list";
+            // 
+            // SelectedCharactersLabel
+            // 
+            this.SelectedCharactersLabel.AutoSize = true;
+            this.SelectedCharactersLabel.Location = new System.Drawing.Point(268, 178);
+            this.SelectedCharactersLabel.Name = "SelectedCharactersLabel";
+            this.SelectedCharactersLabel.Size = new System.Drawing.Size(108, 13);
+            this.SelectedCharactersLabel.TabIndex = 9;
+            this.SelectedCharactersLabel.Text = "Characters to copy to";
+            // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(268, 136);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(229, 44);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "To select a character, click on a character in the list. To delete, click on the " +
+    "character again in the characters to copy to list.";
+            // 
+            // CharactersToCopyToListView
+            // 
+            this.CharactersToCopyToListView.Location = new System.Drawing.Point(268, 194);
+            this.CharactersToCopyToListView.Name = "CharactersToCopyToListView";
+            this.CharactersToCopyToListView.Size = new System.Drawing.Size(229, 256);
+            this.CharactersToCopyToListView.TabIndex = 4;
+            this.CharactersToCopyToListView.UseCompatibleStateImageBehavior = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 592);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.SelectedCharactersLabel);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.CharacterToCopyTextbox);
+            this.Controls.Add(this.SelectedCharacterLabel);
+            this.Controls.Add(this.CharacterLabel);
+            this.Controls.Add(this.RealmLabel);
+            this.Controls.Add(this.CharactersToCopyToListView);
+            this.Controls.Add(this.CharacterListView);
+            this.Controls.Add(this.RealmListView);
             this.Controls.Add(this.FolderPathButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -113,6 +218,16 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button FolderPathButton;
+        private System.Windows.Forms.ListView RealmListView;
+        private System.Windows.Forms.Label RealmLabel;
+        private System.Windows.Forms.ListView CharacterListView;
+        private System.Windows.Forms.Label CharacterLabel;
+        private System.Windows.Forms.Label SelectedCharacterLabel;
+        private System.Windows.Forms.TextBox CharacterToCopyTextbox;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label SelectedCharactersLabel;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ListView CharactersToCopyToListView;
     }
 }
 
