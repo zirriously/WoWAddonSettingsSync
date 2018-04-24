@@ -48,17 +48,18 @@
             // 
             // WTFPathTextbox
             // 
-            this.WTFPathTextbox.Location = new System.Drawing.Point(91, 53);
+            this.WTFPathTextbox.Location = new System.Drawing.Point(89, 52);
             this.WTFPathTextbox.Name = "WTFPathTextbox";
-            this.WTFPathTextbox.Size = new System.Drawing.Size(407, 20);
+            this.WTFPathTextbox.Size = new System.Drawing.Size(381, 20);
             this.WTFPathTextbox.TabIndex = 0;
             // 
             // WTFPathLabel
             // 
             this.WTFPathLabel.AutoSize = true;
-            this.WTFPathLabel.Location = new System.Drawing.Point(12, 56);
+            this.WTFPathLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WTFPathLabel.Location = new System.Drawing.Point(12, 55);
             this.WTFPathLabel.Name = "WTFPathLabel";
-            this.WTFPathLabel.Size = new System.Drawing.Size(60, 13);
+            this.WTFPathLabel.Size = new System.Drawing.Size(71, 13);
             this.WTFPathLabel.TabIndex = 1;
             this.WTFPathLabel.Text = "Folder path";
             // 
@@ -67,13 +68,14 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(365, 13);
+            this.label1.Size = new System.Drawing.Size(317, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Depending on drive you installed WoW on, the path will look something like:";
+            this.label1.Text = "Depending on drive you installed WoW on, the path will resemble:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(406, 13);
@@ -91,7 +93,7 @@
             // 
             // FolderPathButton
             // 
-            this.FolderPathButton.Location = new System.Drawing.Point(70, 52);
+            this.FolderPathButton.Location = new System.Drawing.Point(470, 51);
             this.FolderPathButton.Name = "FolderPathButton";
             this.FolderPathButton.Size = new System.Drawing.Size(22, 22);
             this.FolderPathButton.TabIndex = 3;
@@ -99,7 +101,7 @@
             // 
             // RealmListView
             // 
-            this.RealmListView.Location = new System.Drawing.Point(15, 113);
+            this.RealmListView.Location = new System.Drawing.Point(15, 131);
             this.RealmListView.Name = "RealmListView";
             this.RealmListView.Size = new System.Drawing.Size(120, 337);
             this.RealmListView.TabIndex = 4;
@@ -108,15 +110,16 @@
             // RealmLabel
             // 
             this.RealmLabel.AutoSize = true;
-            this.RealmLabel.Location = new System.Drawing.Point(12, 100);
+            this.RealmLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RealmLabel.Location = new System.Drawing.Point(12, 118);
             this.RealmLabel.Name = "RealmLabel";
-            this.RealmLabel.Size = new System.Drawing.Size(37, 13);
+            this.RealmLabel.Size = new System.Drawing.Size(42, 13);
             this.RealmLabel.TabIndex = 5;
             this.RealmLabel.Text = "Realm";
             // 
             // CharacterListView
             // 
-            this.CharacterListView.Location = new System.Drawing.Point(142, 113);
+            this.CharacterListView.Location = new System.Drawing.Point(142, 131);
             this.CharacterListView.Name = "CharacterListView";
             this.CharacterListView.Size = new System.Drawing.Size(120, 337);
             this.CharacterListView.TabIndex = 4;
@@ -125,49 +128,52 @@
             // CharacterLabel
             // 
             this.CharacterLabel.AutoSize = true;
-            this.CharacterLabel.Location = new System.Drawing.Point(139, 100);
+            this.CharacterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CharacterLabel.Location = new System.Drawing.Point(139, 118);
             this.CharacterLabel.Name = "CharacterLabel";
-            this.CharacterLabel.Size = new System.Drawing.Size(53, 13);
+            this.CharacterLabel.Size = new System.Drawing.Size(62, 13);
             this.CharacterLabel.TabIndex = 5;
             this.CharacterLabel.Text = "Character";
             // 
             // SelectedCharacterLabel
             // 
             this.SelectedCharacterLabel.AutoSize = true;
-            this.SelectedCharacterLabel.Location = new System.Drawing.Point(266, 100);
+            this.SelectedCharacterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectedCharacterLabel.Location = new System.Drawing.Point(266, 115);
             this.SelectedCharacterLabel.Name = "SelectedCharacterLabel";
-            this.SelectedCharacterLabel.Size = new System.Drawing.Size(114, 13);
+            this.SelectedCharacterLabel.Size = new System.Drawing.Size(136, 13);
             this.SelectedCharacterLabel.TabIndex = 6;
             this.SelectedCharacterLabel.Text = "Character to copy from";
             // 
             // CharacterToCopyTextbox
             // 
-            this.CharacterToCopyTextbox.Location = new System.Drawing.Point(269, 113);
+            this.CharacterToCopyTextbox.Location = new System.Drawing.Point(269, 131);
             this.CharacterToCopyTextbox.Name = "CharacterToCopyTextbox";
             this.CharacterToCopyTextbox.Size = new System.Drawing.Size(229, 20);
             this.CharacterToCopyTextbox.TabIndex = 7;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(198, 87);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(266, 87);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(306, 13);
+            this.label4.Size = new System.Drawing.Size(192, 26);
             this.label4.TabIndex = 8;
             this.label4.Text = "Select the character you want to copy from in the \'character\' list";
             // 
             // SelectedCharactersLabel
             // 
             this.SelectedCharactersLabel.AutoSize = true;
-            this.SelectedCharactersLabel.Location = new System.Drawing.Point(268, 178);
+            this.SelectedCharactersLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectedCharactersLabel.Location = new System.Drawing.Point(265, 227);
             this.SelectedCharactersLabel.Name = "SelectedCharactersLabel";
-            this.SelectedCharactersLabel.Size = new System.Drawing.Size(108, 13);
+            this.SelectedCharactersLabel.Size = new System.Drawing.Size(129, 13);
             this.SelectedCharactersLabel.TabIndex = 9;
             this.SelectedCharactersLabel.Text = "Characters to copy to";
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(268, 136);
+            this.label5.Location = new System.Drawing.Point(265, 180);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(229, 44);
             this.label5.TabIndex = 9;
@@ -176,9 +182,9 @@
             // 
             // CharactersToCopyToListView
             // 
-            this.CharactersToCopyToListView.Location = new System.Drawing.Point(268, 194);
+            this.CharactersToCopyToListView.Location = new System.Drawing.Point(268, 240);
             this.CharactersToCopyToListView.Name = "CharactersToCopyToListView";
-            this.CharactersToCopyToListView.Size = new System.Drawing.Size(229, 256);
+            this.CharactersToCopyToListView.Size = new System.Drawing.Size(229, 228);
             this.CharactersToCopyToListView.TabIndex = 4;
             this.CharactersToCopyToListView.UseCompatibleStateImageBehavior = false;
             // 
@@ -186,7 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(510, 592);
+            this.ClientSize = new System.Drawing.Size(520, 592);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.SelectedCharactersLabel);
             this.Controls.Add(this.label4);
