@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoWAddonSettingsSync", "WoWAddonSettingsSync\WoWAddonSettingsSync.csproj", "{8EA4856C-F708-420D-8611-34BE16A00468}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WoWAddonSettingsSyncWPF", "WoWAddonSettingsSyncWPF\WoWAddonSettingsSyncWPF.csproj", "{C062EBB5-FCFA-44C7-8BB9-BE35FB57BBEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8EA4856C-F708-420D-8611-34BE16A00468}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EA4856C-F708-420D-8611-34BE16A00468}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EA4856C-F708-420D-8611-34BE16A00468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C062EBB5-FCFA-44C7-8BB9-BE35FB57BBEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C062EBB5-FCFA-44C7-8BB9-BE35FB57BBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C062EBB5-FCFA-44C7-8BB9-BE35FB57BBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C062EBB5-FCFA-44C7-8BB9-BE35FB57BBEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
