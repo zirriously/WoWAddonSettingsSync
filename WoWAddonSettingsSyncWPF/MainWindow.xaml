@@ -5,8 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WoWAddonSettingsSyncWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="WoW Addon Settings Sync" Height="398" Width="413" MinHeight="440" MinWidth="465">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <GroupBox Header="WoW installation path" Margin="10" Grid.Row="0">
+            <Grid Margin="10">
+                <Label Content="Folder path
+                       " HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <TextBox Height="23" Margin="84,3,10,0" TextWrapping="Wrap" Text="C:\whatever\WoW" VerticalAlignment="Top"/>
+                <Button Content="..." Margin="0,3,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="23" Height="23" RenderTransformOrigin="1.123,0.396"/>
+                <TextBlock Margin="0,32,20,0" TextWrapping="Wrap" Height="53" VerticalAlignment="Top"><Run Text="Depending on your setup, the installation path will resemble"/><LineBreak/><Run FontStyle="Italic" Text="C:\Program Files (x86)\World of Warcraft\WTF\Account\YourName#1234"/><LineBreak/><Run Text="Remember to choose the correct account folder."/></TextBlock>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Source character" Margin="10" Grid.Row="1">
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Column="0" Content="Realm" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"/>
+                <Label Grid.Column="1" Content="Character" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top"/>
+                <ComboBox Grid.Column="0" Margin="0,26,5,0" VerticalAlignment="Top"/>
+                <ComboBox Grid.Column="1" Margin="5,26,0,0" VerticalAlignment="Top" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Destination characters" Margin="10" Grid.Row="2">
+            <Grid Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <ListBox Grid.Column="0" Margin="0"/>
+                <Button Grid.Column="1" Content="Sync addon settings" Height="33" VerticalAlignment="Bottom" Click="Button_Click" FontSize="18" HorizontalAlignment="Right" Width="190"/>
+            </Grid>
+        </GroupBox>
     </Grid>
 </Window>
