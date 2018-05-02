@@ -99,5 +99,8 @@
   <ItemGroup>
     <Resource Include="Assets\Question_16x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\22_waifu2x_art_noise0_scale_tta_1 copy.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

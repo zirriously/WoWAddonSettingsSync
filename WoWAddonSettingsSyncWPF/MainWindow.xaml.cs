@@ -57,9 +57,9 @@ namespace WoWAddonSettingsSyncWPF
             }
 
             Console.WriteLine("PATH\n" + _WoWPath + "\nACCOUNTS");
-            foreach (var VARIABLE in _accountsPathsList)
+            foreach (var v in _accountsPathsList)
             {
-                Console.WriteLine(VARIABLE);
+                Console.WriteLine(v);
             }
         }
     }
