@@ -49,14 +49,14 @@ namespace WoWAddonSettingsSyncWPF
             foreach (var dir in Directory.GetDirectories(_WoWPath))
             {
                 var d = new DirectoryInfo(dir);
-                _accountsList.Add(d.Name);
-                _accountsPathsList.Add(dir);
+                if (!d.Name.Contains("SavedVariables"))
+                {
+                    _accountsList.Add(d.Name);
+                    _accountsPathsList.Add(dir);
+                }
             }
 
-            //if (_accountsList.Contains("SavedVariables"))
-            //    _accountsList.Remove("SavedVariables");
-
-            Console.WriteLine(_WoWPath);
+            Console.WriteLine("PATH\n" + _WoWPath + "\nACCOUNTS");
             foreach (var VARIABLE in _accountsPathsList)
             {
                 Console.WriteLine(VARIABLE);
