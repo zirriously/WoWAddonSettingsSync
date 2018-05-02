@@ -16,9 +16,6 @@ using System.Windows.Shapes;
 
 namespace WoWAddonSettingsSyncWPF
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         private string _WoWPath;
@@ -56,11 +53,20 @@ namespace WoWAddonSettingsSyncWPF
                 }
             }
 
+            AccountCombobox.ItemsSource = _accountsList;
+            AccountCombobox.Text = _accountsList[0];
+
+            //debug
             Console.WriteLine("PATH\n" + _WoWPath + "\nACCOUNTS");
             foreach (var v in _accountsPathsList)
             {
                 Console.WriteLine(v);
             }
+        }
+
+        private void AccountCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Console.WriteLine(AccountCombobox.SelectedItem.ToString());
         }
     }
 }
