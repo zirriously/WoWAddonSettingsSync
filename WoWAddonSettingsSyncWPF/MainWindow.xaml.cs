@@ -21,6 +21,7 @@ namespace WoWAddonSettingsSyncWPF
         private string _WoWPath;
         private List<string> _accountsList = new List<string>();
         private List<string> _accountsPathsList = new List<string>();
+        private Dictionary<string, List<string>> _characterDictionary = new Dictionary<string, List<string>>();
 
         public MainWindow()
         {
@@ -53,20 +54,32 @@ namespace WoWAddonSettingsSyncWPF
                 }
             }
 
-            AccountCombobox.ItemsSource = _accountsList;
-            AccountCombobox.Text = _accountsList[0];
-
             //debug
             Console.WriteLine("PATH\n" + _WoWPath + "\nACCOUNTS");
             foreach (var v in _accountsPathsList)
             {
                 Console.WriteLine(v);
             }
+
+            FindCharacters(_accountsPathsList);
         }
 
-        private void AccountCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void FindCharacters(List<string> pathsList)
         {
-            Console.WriteLine(AccountCombobox.SelectedItem.ToString());
+            foreach (var path in pathsList) //acc
+            {
+                foreach (var dir in Directory.GetDirectories(path)) //realm
+                {
+                    var dirInfo = new DirectoryInfo(dir);
+                    if (!dirInfo.Name.Contains("SavedVariables"))
+                    {
+                        foreach (var characterDir in Directory.GetDirectories(dirInfo.FullName)) //character
+                        {
+                            Console.WriteLine(characterDir);
+                        }
+                    }
+                }
+            }
         }
     }
 }
