@@ -23,6 +23,7 @@ namespace WoWAddonSettingsSyncWPF
         private List<string> _accountsPathsList = new List<string>();
         private Dictionary<string, List<string>> _characterDictionary = new Dictionary<string, List<string>>();
 
+
         public MainWindow()
         {
             InitializeComponent();
@@ -75,7 +76,26 @@ namespace WoWAddonSettingsSyncWPF
                     {
                         foreach (var characterDir in Directory.GetDirectories(dirInfo.FullName)) //character
                         {
-                            Console.WriteLine(characterDir);
+                            var charDirInfo = new DirectoryInfo(characterDir);
+                            string realm = charDirInfo.Parent?.Name;
+
+                            if (!_characterDictionary.ContainsKey(realm))
+                            {
+                                _characterDictionary.Add(realm, new List<string>());
+                                _characterDictionary[realm].Add(characterDir);
+                            }
+                            else
+                            {
+                                _characterDictionary[realm].Add(characterDir);
+                            }
+
+                            for (int i = 0; i < _characterDictionary.Count; i++)
+                            {
+                                foreach (var var in _characterDictionary.Values)
+                                {
+                                    Console.WriteLine(var[i]);
+                                }
+                            }
                         }
                     }
                 }
